@@ -1,14 +1,14 @@
 # Hi, I'm Jason
 
-**Systems Administrator · Homelab Builder · Cybersecurity Aspirant · Northern Ireland**
+**Systems Administrator · Homelab Builder · Cybersecurity · Northern Ireland**
 
 ---
 
-I work in IT systems administration and I'm building toward cloud infrastructure and cybersecurity roles through structured, hands-on practical work rather than certifications alone.
+Currently I work in IT systems administration and I'm building toward cloud infrastructure and cloud security roles through structured, hands-on practical work rather than certifications alone.
 
-The projects here are real. They came from real ideas with real problems, real troubleshooting sessions, and real lessons learned the hard way. I have tried to ensure I documented properly throughout — not just "here is the config that worked," but why it worked, what broke first, how I isolated it, and what I would do differently next time.
+The projects I highlight here are real. They initially started as an idea that led on to implementation, real troubleshooting sessions, and real lessons learned through (a lot of) trial and error. I have tried to ensure I documented properly throughout, not just "here is the config that worked," but why it worked, what I broke first, how I isolated it, and what I would do differently next time.
 
-I treat the lab like a proper technical environment. That means planned segmentation, documented runbooks, structured change decisions, and evidence that something actually works rather than just looks like it might.
+I try to treat the homelab like a proper technical environment, this helps me to understand the approach, the risks and rollbacks etc.
 
 ---
 
@@ -18,9 +18,9 @@ I treat the lab like a proper technical environment. That means planned segmenta
 
 The current environment includes:
 
-- FortiGate 300D firewall handling edge security, NAT, inter-VLAN policy and VPN (old but gold, just a tad power hungry!)
+- FortiGate 300D firewall handling edge security, NAT, inter-VLAN policy and VPN (old but gold, just a tad power hungry!) **FG has now been disconnected after migrating to a MikroTik HexS in favour of power efficiency until I can get my hands on a FG 60F or 80F)
 - Cisco Catalyst 2960X providing core Layer 2 switching and VLAN trunking
-- HPE ProLiant DL380 Gen9 and Dell PowerEdge R620 running Proxmox virtualisation
+- HPE ProLiant DL380 Gen9 and Dell PowerEdge R620 running Proxmox virtualisation (now decom's and migrated to 1 primary Optiplex & a soon to be secondary Optiplex, this was also done in favour of power efficiency)
 - Wazuh SIEM deployed and actively receiving telemetry from multiple endpoints
 - Internal reverse proxy layer using NGINX Proxy Manager with wildcard certificate trust
 - WireGuard VPN providing secure remote access through a double-NAT environment
@@ -85,9 +85,9 @@ Proxmox Backup          Trunk / access ports    Structured troubleshooting
 
 ## How I Document
 
-Every project here has a matching write-up that covers what I was trying to achieve, the decisions made along the way, what broke, how I isolated it, and what was left working at the end.
+Each project here has a matching write-up that covers what I was trying to achieve, the decisions made along the way, what broke, how I isolated it, and what was left working at the end.
 
-The Notion workspace behind these projects includes runbooks, STAR-format troubleshooting analyses, asset registers, interface maps, and phased roadmaps. Where a GitHub README gives you the summary, the Notion doc gives you the full depth.
+The Notion workspace behind these projects includes runbooks, STAR-format troubleshooting analyses, asset registers, interface maps, and phased roadmaps. Where a GitHub README gives you the summary, the Notion doc gives you the full depth, to further enhance my ability for accurate documentation and logical formatting I do use a mix of AI to to help
 
 I document this way because in a real environment, the person fixing something at 2am should not need to reverse-engineer what was built. They should be able to read a doc and understand it.
 
@@ -110,4 +110,4 @@ I document this way because in a real environment, the person fixing something a
 
 ---
 
-*Everything here is built, broken, fixed and documented in a homelab in Northern Ireland while heavily caffeinated.*
+*Everything here is built, broken, fixed and documented in my homelab in Northern Ireland while heavily caffeinated.*
